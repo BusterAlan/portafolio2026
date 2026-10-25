@@ -178,66 +178,134 @@
                 </article>
 
                 <!-- Proyecto 2 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl grid md:grid-cols-12 gap-6 p-8">
-                    <div class="md:col-span-12 space-y-4">
-                        <div class="flex flex-wrap items-center justify-between gap-4">
-                            <div>
-                                <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Proyecto 2</span>
-                                <h3 class="text-2xl font-bold text-white">Tabla Periódica Móvil</h3>
-                            </div>
-                            <div class="bg-indigo-500/10 text-indigo-400 text-xs px-3 py-1 rounded-lg border border-indigo-500/20">Rol: Desarrollador Frontend Móvil</div>
+                <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                        <div>
+                            <!-- Chip azul coherente -->
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 bg-blue-900/60 px-3 py-1 rounded-md border border-blue-700/60">Proyecto 2</span>
+                            <h3 class="text-2xl font-bold mt-2 text-white">Tabla Periódica móvil</h3>
                         </div>
-                        <div class="grid md:grid-cols-2 gap-6 pt-4 border-t border-slate-800">
+                        <!-- Chip de rol consistente -->
+                        <span class="text-xs font-semibold text-blue-200 bg-blue-950 px-3 py-1.5 rounded-full border border-blue-800 w-fit">Desarrollador Móvil</span>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 uppercase mb-2">Contexto y Problema</h4>
-                                <p class="text-sm text-slate-400 leading-relaxed">
-                                    Necesidad educativa de contar con una aplicación móvil rápida y optimizada para explorar elementos químicos, propiedades físicas, masas atómicas y clasificación por grupos con acceso offline.
-                                </p>
+                                <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Contexto y Problema</h4>
+                                <p class="mt-1 text-sm text-slate-200">App sencilla adaptada para poder ver e interactuar con cada elemento de la tabla periódica, facilitando la consulta de información detallada, propiedades y grupos químicos desde dispositivos móviles.</p>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 uppercase mb-2">Herramientas y Tecnologías</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="bg-slate-950 border border-slate-800 text-xs px-3 py-1.5 rounded-lg text-slate-300 font-medium">Flutter / Dart</span>
-                                    <span class="bg-slate-950 border border-slate-800 text-xs px-3 py-1.5 rounded-lg text-slate-300 font-medium">Laravel</span>
-                                    <span class="bg-slate-950 border border-slate-800 text-xs px-3 py-1.5 rounded-lg text-slate-300 font-medium">MySQL</span>
+                                <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Stack Tecnológico</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-3 py-1 bg-slate-950 border border-slate-800 text-xs rounded-lg text-slate-200">Flutter/Dart</span>
+                                    <span class="px-3 py-1 bg-slate-950 border border-slate-800 text-xs rounded-lg text-slate-200">Laravel</span>
+                                    <span class="px-3 py-1 bg-slate-950 border border-slate-800 text-xs rounded-lg text-slate-200">MySQL</span>
                                 </div>
-                                <h4 class="text-sm font-semibold text-slate-300 uppercase mt-4 mb-2">Resultados e Impacto</h4>
-                                <p class="text-sm text-slate-400">Interfaz fluida con animaciones de transición nativas y estructura de base de datos relacional para consultas instantáneas en dispositivos móviles de distintas gamas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Enlaces y Accesos (Bitbucket / Video Demo) -->
+                        <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl flex flex-col justify-between space-y-4">
+                            <div>
+                                <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide mb-3">Enlaces y Accesos</h4>
+                                <div class="flex flex-col gap-2">
+                                    <!-- Reemplaza con la ruta real de tu repo de este proyecto en Bitbucket -->
+                                    <a href="https://github.com/BusterAlan/periodic_table_dynamic" target="_blank" class="flex items-center gap-2 text-sm text-blue-300 hover:text-white hover:bg-blue-950/50 px-3 py-2 rounded-lg border border-slate-800 transition">
+                                        <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                        Repositorio GitHub
+                                    </a>
+                                    <!-- Opcional si tienes video demo -->
+                                    <a href="https://drive.google.com/file/d/1flamoJM7hT9I51kJI608joT3MixIAxuO/view?usp=drive_link" target="_blank" class="flex items-center gap-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-emerald-950/30 px-3 py-2 rounded-lg border border-slate-800 transition">
+                                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                        Video Demo
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <!-- Evidencias Visuales (Con etiquetas IMG idénticas a tu formato) -->
+                    <div class="border-t border-slate-800 pt-4 space-y-3">
+                        <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Evidencia Técnica y Visual</h4>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                                <img src="imgs/periodic_table_screenshot.png" class="rounded-lg h-48 w-96 object-contain" alt="Interfaz de Tabla Periódica">
+                                <span class="text-xs text-slate-300 font-medium mt-2">Vista inicial del elemento</span>
+                            </div>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                                <img src="imgs/periodic_table_sql_diagram.png" class="rounded-lg h-48 w-96 object-contain" alt="Esquema DB Tabla Periódica">
+                                <span class="text-xs text-slate-300 font-medium mt-2">Estructura relacional de datos químicos</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
                 <!-- Proyecto 3 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl grid md:grid-cols-12 gap-6 p-8">
-                    <div class="md:col-span-12 space-y-4">
-                        <div class="flex flex-wrap items-center justify-between gap-4">
-                            <div>
-                                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Proyecto 3</span>
-                                <h3 class="text-2xl font-bold text-white">Helpdesk Móvil (OCSI Soluciones S.A de C.V.)</h3>
-                            </div>
-                            <div class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-lg border border-emerald-500/20">Rol: Desarrollador de Módulo Móvil</div>
+                <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                        <div>
+                            <!-- Chip azul coherente -->
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 bg-blue-900/60 px-3 py-1 rounded-md border border-blue-700/60">Proyecto 3</span>
+                            <h3 class="text-2xl font-bold mt-2 text-white">Helpdesk móvil</h3>
                         </div>
-                        <div class="grid md:grid-cols-2 gap-6 pt-4 border-t border-slate-800">
+                        <!-- Chip de empresa / rol consistente -->
+                        <span class="text-xs font-semibold text-blue-200 bg-blue-950 px-3 py-1.5 rounded-full border border-blue-800 w-fit">OCSI Soluciones S.A de C.V.</span>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 uppercase mb-2">Contexto y Problema</h4>
-                                <p class="text-sm text-slate-400 leading-relaxed">
-                                    Resolución directa de un cuello de botella de accesibilidad: la plataforma operaba únicamente de forma web. Se requirió un módulo móvil compartido para consumir por múltiples aplicaciones, enfocado en creación, seguimiento de tickets corporativos, autenticación segura y edición de perfiles de usuario.
-                                </p>
+                                <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Contexto y Problema</h4>
+                                <p class="mt-1 text-sm text-slate-200">Módulo móvil compartido diseñado para ser consumido por varias aplicaciones. Resuelve de forma directa el problema de accesibilidad de la empresa, ya que originalmente el sistema de soporte y seguimiento operaba exclusivamente mediante un método web tradicional.</p>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 uppercase mb-2">Herramientas y Tecnologías</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="bg-slate-950 border border-slate-800 text-xs px-3 py-1.5 rounded-lg text-slate-300 font-medium">Flutter / Dart</span>
-                                    <span class="bg-slate-950 border border-slate-800 text-xs px-3 py-1.5 rounded-lg text-slate-300 font-medium">REST APIs</span>
-                                    <span class="bg-slate-950 border border-slate-800 text-xs px-3 py-1.5 rounded-lg text-slate-300 font-medium">Clean Architecture</span>
+                                <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Impacto y Funcionalidades</h4>
+                                <p class="mt-1 text-sm text-slate-200">Facilita la creación y seguimiento eficiente de tickets de soporte para distintas áreas operativas, permitiendo además el inicio de sesión seguro y la edición completa del perfil de usuario desde el entorno móvil.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Stack Tecnológico</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-3 py-1 bg-slate-950 border border-slate-800 text-xs rounded-lg text-slate-200">Flutter/Dart</span>
                                 </div>
-                                <h4 class="text-sm font-semibold text-slate-300 uppercase mt-4 mb-2">Resultados e Impacto</h4>
-                                <p class="text-sm text-slate-400">Librería móvil modular reutilizable que eliminó la dependencia exclusiva del escritorio, reduciendo los tiempos de respuesta de soporte en campo.</p>
+                            </div>
+                        </div>
+
+                        <!-- Enlaces y Accesos (Bitbucket / Video Demo) -->
+                        <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl flex flex-col justify-between space-y-4">
+                            <div>
+                                <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide mb-3">Enlaces y Accesos</h4>
+                                <div class="flex flex-col gap-2">
+                                    <!-- Reemplaza con la ruta real de tu repo de este proyecto en Bitbucket -->
+                                    <a href="#" target="_blank" class="flex items-center gap-2 text-sm text-blue-300 hover:text-white hover:bg-blue-950/50 px-3 py-2 rounded-lg border border-slate-800 transition">
+                                        <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                        Repositorio GitHub (Privado)
+                                    </a>
+                                    <!-- Opcional si tienes video demo -->
+                                    <a href="https://drive.google.com/file/d/1FFqq92XvyJ6s80MpWaym7g6bOvDXiwJZ/view?usp=sharing" target="_blank" class="flex items-center gap-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-emerald-950/30 px-3 py-2 rounded-lg border border-slate-800 transition">
+                                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                        Video Demo
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <!-- Evidencias Visuales (Con etiquetas IMG idénticas a los anteriores) -->
+                    <div class="border-t border-slate-800 pt-4 space-y-3">
+                        <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Evidencia Técnica y Visual</h4>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                                <img src="imgs/helpdesk_screenshot.png" class="rounded-lg h-48 w-96 object-contain" alt="Interfaz Helpdesk Móvil">
+                                <span class="text-xs text-slate-300 font-medium mt-2">Flujo de tickets de soporte en el teléfono</span>
+                            </div>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                                <img src="imgs/dotnetframework.png" class="rounded-lg h-48 w-96 object-contain" alt="Diagrama Arquitectura Helpdesk">
+                                <span class="text-xs text-slate-300 font-medium mt-2">Se usa .NET Framework cómo API Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
             </div>
         </div>
